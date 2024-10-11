@@ -83,19 +83,19 @@ const pushServerChan = (title, desp) => {
     desp,
   };
   superagent
-    .post(`https://sctapi.ftqq.com/${serverChan.sendKey}.send`)
+    .post(`https://${serverChan.sendKey}.push.ft07.com/send`)
     .type("form")
     .send(data)
     .end((err, res) => {
       if (err) {
-        logger.error(`ServerChan推送失败:${JSON.stringify(err)}`);
+        logger.error(`Server3推送失败:${JSON.stringify(err)}`);
         return;
       }
       const json = JSON.parse(res.text);
       if (json.code !== 0) {
-        logger.error(`ServerChan推送失败:${JSON.stringify(json)}`);
+        logger.error(`Server3推送失败:${JSON.stringify(json)}`);
       } else {
-        logger.info("ServerChan推送成功");
+        logger.info("Server3推送成功");
       }
     });
 };
