@@ -38,9 +38,9 @@
 
 ### 设置推送
 
-#### Server 酱
+#### Server 酱3
 
-为了考虑到不同客户端兼容性,采用了 Server 酱,只需多配置下 SENDKEY
+为了考虑到不同客户端兼容性,采用了 Server 酱3,只需多配置下 SENDKEY
 ![](https://cdn.jsdelivr.net/gh/wes-lin/Cloud189Checkin/image/push.png)就行,Server 酱的配置和 sendkey 的获取可参看[Server 酱官网](https://sct.ftqq.com/)
 
 #### TelegramBot 推送
@@ -110,6 +110,7 @@ TY_ACCOUNTS=[{"userName":"userName","password":"password"}]
 ### 推送
 
 修改 serverChan.js 或者添加环境变量 SENDKEY
+
 修改了server酱为Server酱3，改了推送链接，详细用法可以参照https://sc3.ft07.com/
 
 执行命令
