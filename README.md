@@ -110,6 +110,7 @@ TY_ACCOUNTS=[{"userName":"userName","password":"password"}]
 ### 推送
 
 修改 serverChan.js 或者添加环境变量 SENDKEY
+修改了server酱为Server酱3，改了推送链接，详细用法可以参照https://sc3.ft07.com/
 
 执行命令
 
