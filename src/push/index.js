@@ -20,7 +20,7 @@ const pushServerChan = (title, desp) => {
     desp: desp.replaceAll("\n","\n\n"),
   };
   superagent
-    .post(`https://sctapi.ftqq.com/${serverChan.sendKey}.send`)
+    .post(`https://1614.push.ft07.com/send/${serverChan.sendKey}.send`)
     .type("form")
     .send(data)
     .then((res) => {
